@@ -11,6 +11,9 @@ mkdir benbot && cd benbot
 virtualenv venv
 ```
 ```sh
+venv\Scripts\activate
+```
+```sh
 git clone https://github.com/l1v0n1/ben-talking-bot.git
 ```
 ```sh
