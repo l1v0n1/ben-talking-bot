@@ -39,7 +39,8 @@ async def any_message_handler(message: Message):
         "This bot can help you find out the answers to your questions.\n"
         "It works automatically, you don't need to add it anywhere.\n"
         f"Simply open any of your chats and type @{botname['username']} + something in the message field. Then tap on a result to send..\n\n"
-        f"For example, try <code>@{botname['username']} telegram is good?</code>", parse_mode='HTML')
+        f"For example, try <code>@{botname['username']} telegram is good?</code>\n"
+        "My repo on github - https://github.com/l1v0n1/ben-talking-bot", parse_mode='HTML')
 
 
 if __name__ == '__main__':
