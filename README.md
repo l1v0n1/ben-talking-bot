@@ -5,10 +5,18 @@
 
 ### Installation:
 ```sh
+mkdir benbot && cd benbot
+```
+```sh
+virtualenv venv
+```
+```sh
 git clone https://github.com/l1v0n1/ben-talking-bot.git
-
+```
+```sh
 cd ben-talking-bot
-
+```
+```sh
 pip install -r requirements.txt
 ```
 ### Setup:
