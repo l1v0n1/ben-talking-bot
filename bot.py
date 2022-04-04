@@ -18,8 +18,8 @@ dp = Dispatcher(bot)
 async def inline_echo(inline_query: InlineQuery):
     phrases = ['yes.', 'no.', 'hohoho', 'aaagh']
     choice = random.choice(phrases)
-    text = inline_query.query + '<b>\n{}</b>'.format(choice)
-    input_content = InputTextMessageContent(text, parse_mode='HTML')
+    text = inline_query.query + '*\n{}*'.format(choice)
+    input_content = InputTextMessageContent(text, parse_mode='MarkdownV2')
     result_id: str = hashlib.md5(text.encode()).hexdigest()
     thumb = 'https://memepedia.ru/wp-content/uploads/2022/02/hohoho-nou-mem-govorjashchij-ben-768x512.jpg'
     item = InlineQueryResultArticle(
